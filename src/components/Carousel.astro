@@ -2,21 +2,21 @@
 
 ---
 
-<section class="h-[90vh]">
-  <div class="swiper h-full bg-blue-300">
+<section class="especial">
+  <div class="swiper h-full">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide relative">
         <div
-          class="contenido absolute bg-gradient-to-b from-slate-900/90 to-transparent
+          class="contenido absolute bg-gradient-to-br from-slate-900/90 to-transparent
                 w-full h-full"
         >
-          <div class="max-w-[1240px] mx-auto left-0 right-0">
-            <div class="grid grid-cols-2">
-                <div class="item">
+          <div class="max-w-[1240px] h-full w-full justify-center  mx-auto left-0 right-0">
+            <div class="grid grid-cols-2 h-full">
+                <div class="item flex items-center justify-center">
                     <img 
-                        class="w-full h-[70%]" 
+                        class="h-[70%] w-[100%]" 
                         src="/carousel/carro-1.svg" 
                         alt="Imagen de pruebas" 
                     />
@@ -30,16 +30,22 @@
       <div class="swiper-slide">Slide 3</div>
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-pagination"></div> -->
 
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
 </section>
+<style>
+    .especial
+    {
+        height: calc( 100vh - 76.5px );
+    }
+</style>
 <script>
   import Swiper from "swiper";
   import { Navigation, Pagination } from "swiper/modules";
